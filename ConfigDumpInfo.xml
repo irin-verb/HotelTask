@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.16">
+	<ConfigVersions>
+		<Metadata name="AccumulationRegister.ОплатаЗаездовПостояльца" id="e3676bd5-bd69-4a26-90dd-02d162bf11c5" configVersion="e3ecd39bbd7381429aee53463321ab4000000000">
+			<Metadata name="AccumulationRegister.ОплатаЗаездовПостояльца.Dimension.Поселение" id="068e628a-98ed-43b4-b2b5-d676b9f00d1b"/>
+			<Metadata name="AccumulationRegister.ОплатаЗаездовПостояльца.Dimension.Постоялец" id="077be46c-4794-45ad-a1d0-5023b9100ea7"/>
+			<Metadata name="AccumulationRegister.ОплатаЗаездовПостояльца.Resource.Сумма" id="3374fc27-9474-4b6b-8c62-9d01ccf85a44"/>
+		</Metadata>
+		<Metadata name="AccumulationRegister.ПрожитыеДниПостояльца" id="792ac67f-1c5e-4c10-95e5-bb3fb00fbb1e" configVersion="8b10583ddccb6b4b96bd37a294605e4e00000000">
+			<Metadata name="AccumulationRegister.ПрожитыеДниПостояльца.Resource.КоличествоДней" id="87964619-e11b-4ba8-aa7c-ac063340588b"/>
+			<Metadata name="AccumulationRegister.ПрожитыеДниПостояльца.Dimension.Постоялец" id="a0b4451d-d382-4a1a-ad1d-2b405e8d88f7"/>
+		</Metadata>
+		<Metadata name="Catalog.ВидыИзОкна" id="abb115f3-4231-409b-9342-7d5c7553adfa" configVersion="e5797b41c2756a4c906b113423dc8eb800000000"/>
+		<Metadata name="Catalog.ВидыИзОкна.Predefined" id="abb115f3-4231-409b-9342-7d5c7553adfa.1c" configVersion="be8ca7add098934b992da143e6ea99a600000000"/>
+		<Metadata name="Catalog.ВидыНомера" id="c6a0cb20-5ff7-471d-9d16-e14a56d47905" configVersion="5b23f68366427446b16673710d15792b00000000"/>
+		<Metadata name="Catalog.ВидыНомера.Predefined" id="c6a0cb20-5ff7-471d-9d16-e14a56d47905.1c" configVersion="63edaf806a20b0448d1c149a9702a14300000000"/>
+		<Metadata name="Catalog.ДанныеПостояльцев" id="bf3cb506-9b49-4fb5-8e37-c527ec3f6413" configVersion="73620a157c99334ab98b7ac047412dff00000000">
+			<Metadata name="Catalog.ДанныеПостояльцев.Attribute.Имя" id="28752c39-fa83-4cb6-8802-3bc86e58abf3"/>
+			<Metadata name="Catalog.ДанныеПостояльцев.Attribute.МестоРаботы" id="489ea288-9eee-4847-80cc-0b1b8c05c8db"/>
+			<Metadata name="Catalog.ДанныеПостояльцев.Attribute.Отчество" id="87f8d794-e348-4c26-a267-bcacf3c559b4"/>
+			<Metadata name="Catalog.ДанныеПостояльцев.Attribute.Фамилия" id="9b4d15a0-c2dd-4d27-a003-e55caaf5cf9f"/>
+			<Metadata name="Catalog.ДанныеПостояльцев.Attribute.ПаспортныеДанные" id="a7e4e3ec-405d-4fb0-8137-f20500e42eb8"/>
+		</Metadata>
+		<Metadata name="Catalog.ДанныеПостояльцев.Form.ФормаЭлемента" id="7ee015f6-8c47-4ab6-856e-ed669f87ba5a" configVersion="a6e3a1bef34320419b881554d48b75a900000000"/>
+		<Metadata name="Catalog.ДанныеПостояльцев.Form.ФормаЭлемента.Form" id="7ee015f6-8c47-4ab6-856e-ed669f87ba5a.0" configVersion="8dda8965e094c84aa2738845759dc2ed00000000"/>
+		<Metadata name="Catalog.НомераГостиницы" id="2cae9e2f-a1f7-4538-84b9-66a230703a7a" configVersion="7b05515cb4c71648af15401cc7cda0e900000000">
+			<Metadata name="Catalog.НомераГостиницы.Attribute.НаличиеТелефона" id="110a84b6-91be-47cd-a6d9-9362205e21d3"/>
+			<Metadata name="Catalog.НомераГостиницы.Attribute.ВидНомера" id="4b0ec8e1-8bbd-496e-922a-5ac9e20904c5"/>
+			<Metadata name="Catalog.НомераГостиницы.Attribute.КоличествоМест" id="70d39060-72c2-41e5-87be-100615935a3d"/>
+		</Metadata>
+		<Metadata name="Catalog.НомераГостиницы.Form.ФормаЭлемента" id="06c548ad-1264-4f6e-a4f8-ea84e35adf98" configVersion="b4b969d339d1134c9dd03949ce73c93800000000"/>
+		<Metadata name="Catalog.НомераГостиницы.Form.ФормаЭлемента.Form" id="06c548ad-1264-4f6e-a4f8-ea84e35adf98.0" configVersion="ec1cd54d2fc9dc4d8bc103556b93bb7800000000"/>
+		<Metadata name="ChartOfCharacteristicTypes.УниверсальныйПВХ" id="ca98bd69-132e-478f-8396-f951c381b464" configVersion="d626301f77dc4440bf30da8ce260b69f00000000"/>
+		<Metadata name="Configuration.Конфигурация" id="79b3efa1-031a-4a15-aa1a-567f9c8d1738" configVersion="875b3486017bc64fb69ff667e2f4428800000000"/>
+		<Metadata name="Document.Бронирование" id="9e9797de-2361-49d9-b260-e60cccd04222" configVersion="e46dd95f9c42834cbddf225926debff300000000">
+			<Metadata name="Document.Бронирование.Attribute.Постоялец" id="883dcecc-d4e8-4186-ac57-3b3c8ff1a187"/>
+			<Metadata name="Document.Бронирование.Attribute.НомерГостиницы" id="abf2d63d-ed36-4cd2-9f65-44963cf6ecbe"/>
+			<Metadata name="Document.Бронирование.Attribute.КонецПериода" id="b1b9986b-e8c4-4682-b475-0fabef166969"/>
+			<Metadata name="Document.Бронирование.Attribute.НачалоПериода" id="f962ff3c-5243-48f3-beff-7bfcb0853b90"/>
+		</Metadata>
+		<Metadata name="Document.Поселение" id="4d3f947b-ee8c-49b8-8674-bbaa3966daa5" configVersion="346ab7b665b1c44ea839f9d91393b66900000000">
+			<Metadata name="Document.Поселение.Attribute.ПроцентУвеличения" id="19d2158d-c922-406b-a194-18da483e780c"/>
+			<Metadata name="Document.Поселение.Attribute.НачалоПериода" id="1c1aec40-3335-4057-bb3c-c7bdfbeedec2"/>
+			<Metadata name="Document.Поселение.Attribute.КонецПериода" id="3f716e2c-2d29-4c1b-81cd-32df437812d5"/>
+			<Metadata name="Document.Поселение.Attribute.Поселение" id="47747f8c-483f-4d4c-8f25-ad6774d70f3f"/>
+			<Metadata name="Document.Поселение.Attribute.НомерГостиницы" id="524d81b7-4498-4c38-9d1b-481f6c5ed7d2"/>
+			<Metadata name="Document.Поселение.Attribute.Бронирование" id="52ab5e65-b611-44c8-ba5d-3a327658d15a"/>
+			<Metadata name="Document.Поселение.Attribute.СуммаОплаты" id="60277f99-7aad-4c57-b186-a359db489892"/>
+			<Metadata name="Document.Поселение.Attribute.ПроцентСкидки" id="68331a93-d7fe-4ee3-a603-4a937f0944ed"/>
+			<Metadata name="Document.Поселение.Attribute.СуммаСкидки" id="8e5ebe2f-9dfe-445a-bea7-61b825e628a1"/>
+			<Metadata name="Document.Поселение.Attribute.СуммаКУплате" id="acde8201-999c-480a-b74a-cfc40a0df6b6"/>
+			<Metadata name="Document.Поселение.Attribute.Постоялец" id="dfc6a34d-8bc9-4922-8946-baf14ebbd1fa"/>
+		</Metadata>
+		<Metadata name="Document.Поселение.Form.ФормаДокумента" id="48b48044-6ed4-401a-8bc9-aeccee09d0ed" configVersion="5de46b578cd3bd4d824a01662ed3c5f400000000"/>
+		<Metadata name="Document.Поселение.Form.ФормаДокумента.Form" id="48b48044-6ed4-401a-8bc9-aeccee09d0ed.0" configVersion="e0e8ddef35cb0d4ea747c7ce8ec472d400000000"/>
+		<Metadata name="Document.Поселение.ObjectModule" id="4d3f947b-ee8c-49b8-8674-bbaa3966daa5.0" configVersion="e9caa7ed7741314bbed893615475d23700000000"/>
+		<Metadata name="Document.ПоступлениеОплатыЗаПоселение" id="b55eba5a-2634-47bf-802d-c74e88a4b7ab" configVersion="fab543b1dd8872429d47fb9508ef2c8300000000">
+			<Metadata name="Document.ПоступлениеОплатыЗаПоселение.Attribute.Сумма" id="7c49ccee-2b2b-45f0-ba46-b1af35affe5e"/>
+			<Metadata name="Document.ПоступлениеОплатыЗаПоселение.Attribute.Поселение" id="e4bb69d3-b455-4c63-8360-361eb7e62072"/>
+		</Metadata>
+		<Metadata name="Document.ПоступлениеОплатыЗаПоселение.ObjectModule" id="b55eba5a-2634-47bf-802d-c74e88a4b7ab.0" configVersion="8fe3f3c251f51441a1af6fbb866bcbf900000000"/>
+		<Metadata name="Document.УстановкаЦенНаНомера" id="92e4f2d5-6fe4-4b24-894c-2791ca173760" configVersion="dcc926fd6a5a6c4399a09444e6bc311200000000">
+			<Metadata name="Document.УстановкаЦенНаНомера.TabularSection.Номера.Attribute.ВидНомера" id="04950e0f-f420-4d3a-be4b-556e7963a28a"/>
+			<Metadata name="Document.УстановкаЦенНаНомера.TabularSection.Номера" id="59482457-ea96-4a3f-9399-c90b6ea19650"/>
+			<Metadata name="Document.УстановкаЦенНаНомера.TabularSection.Номера.Attribute.Стоимость" id="7704bd6d-3457-499f-8dc3-266aa211725d"/>
+		</Metadata>
+		<Metadata name="Document.УстановкаЦенНаНомера.Form.ФормаДокумента" id="c062ad1c-d8b0-4a7a-8102-db037a1583a3" configVersion="995600a831bf7b42bc860ff48ba4370400000000"/>
+		<Metadata name="Document.УстановкаЦенНаНомера.Form.ФормаДокумента.Form" id="c062ad1c-d8b0-4a7a-8102-db037a1583a3.0" configVersion="8c50ff9c0c61d740ab0f6f7f804bd66500000000"/>
+		<Metadata name="Document.УстановкаЦенНаНомера.ObjectModule" id="92e4f2d5-6fe4-4b24-894c-2791ca173760.0" configVersion="e321825133ca7c43becfac666069c67d00000000"/>
+		<Metadata name="InformationRegister.СвойстваНомера" id="8aeb3b9b-008d-43ac-8168-7a5c5e77317b" configVersion="080836838763b24d929b28c402118eb100000000">
+			<Metadata name="InformationRegister.СвойстваНомера.Dimension.СвойствоНомера" id="094ecc97-17ab-474d-b36e-c90d15adb388"/>
+			<Metadata name="InformationRegister.СвойстваНомера.Resource.ЗначениеСвойство" id="350f361d-ca3f-4c0b-8b0b-fb20d0ddeb69"/>
+			<Metadata name="InformationRegister.СвойстваНомера.Dimension.Номер" id="5e0babf9-0938-4cbc-a041-22c10d00e981"/>
+		</Metadata>
+		<Metadata name="InformationRegister.ЦеныНаНомера" id="c8e7c3bf-e9fb-4e01-8694-e050eb8d31b9" configVersion="7430261be501f34f95e406adc23b956300000000">
+			<Metadata name="InformationRegister.ЦеныНаНомера.Resource.Стоимость" id="337895ba-13be-4b74-b744-bed84f4f41b1"/>
+			<Metadata name="InformationRegister.ЦеныНаНомера.Dimension.ВидНомера" id="93fd3ab8-91aa-443c-a80e-f06f2785894a"/>
+		</Metadata>
+		<Metadata name="Language.Русский" id="6442f221-2f67-4f14-a4e2-bf18a7f30eb8" configVersion="df16c55e4f31a343874de30957a0c85d00000000"/>
+		<Metadata name="Subsystem.Гостиница" id="171c853b-9fdf-4f65-bfd9-07a89c132ad9" configVersion="a2dcc453e2d0b24fb09e78fd0674f82800000000"/>
+		<Metadata name="Subsystem.НСИ" id="e1afea12-ff57-40fd-a8b8-7e0d8bb426ed" configVersion="50dfed8d187bfd4a856bf7890d70740c00000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
