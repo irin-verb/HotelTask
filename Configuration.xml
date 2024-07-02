@@ -226,7 +226,7 @@
 			<Language>Русский</Language>
 			<Subsystem>Гостиница</Subsystem>
 			<Subsystem>НСИ</Subsystem>
-			<CommonModule>МенеджерЗанятостиНомеров</CommonModule>
+			<CommonModule>МодульЗанятостиНомеров</CommonModule>
 			<Catalog>ВидыНомера</Catalog>
 			<Catalog>НомераГостиницы</Catalog>
 			<Catalog>ВидыИзОкна</Catalog>
