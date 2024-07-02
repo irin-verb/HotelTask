@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.16">
 	<ConfigVersions>
-		<Metadata name="AccumulationRegister.ОплатаЗаездовПостояльца" id="e3676bd5-bd69-4a26-90dd-02d162bf11c5" configVersion="e3ecd39bbd7381429aee53463321ab4000000000">
-			<Metadata name="AccumulationRegister.ОплатаЗаездовПостояльца.Dimension.Поселение" id="068e628a-98ed-43b4-b2b5-d676b9f00d1b"/>
-			<Metadata name="AccumulationRegister.ОплатаЗаездовПостояльца.Dimension.Постоялец" id="077be46c-4794-45ad-a1d0-5023b9100ea7"/>
-			<Metadata name="AccumulationRegister.ОплатаЗаездовПостояльца.Resource.Сумма" id="3374fc27-9474-4b6b-8c62-9d01ccf85a44"/>
+		<Metadata name="AccumulationRegister.ОплатаЗаездов" id="e3676bd5-bd69-4a26-90dd-02d162bf11c5" configVersion="b29792ccdc904543a94b07b8af3b6dee00000000">
+			<Metadata name="AccumulationRegister.ОплатаЗаездов.Dimension.Поселение" id="068e628a-98ed-43b4-b2b5-d676b9f00d1b"/>
+			<Metadata name="AccumulationRegister.ОплатаЗаездов.Resource.Сумма" id="3374fc27-9474-4b6b-8c62-9d01ccf85a44"/>
 		</Metadata>
 		<Metadata name="AccumulationRegister.ПрожитыеДниПостояльца" id="792ac67f-1c5e-4c10-95e5-bb3fb00fbb1e" configVersion="8b10583ddccb6b4b96bd37a294605e4e00000000">
 			<Metadata name="AccumulationRegister.ПрожитыеДниПостояльца.Resource.КоличествоДней" id="87964619-e11b-4ba8-aa7c-ac063340588b"/>
@@ -33,7 +32,7 @@
 		<Metadata name="ChartOfCharacteristicTypes.УниверсальныйПВХ" id="ca98bd69-132e-478f-8396-f951c381b464" configVersion="d626301f77dc4440bf30da8ce260b69f00000000"/>
 		<Metadata name="CommonModule.МодульЗанятостиНомеров" id="8005376e-e14b-425e-9765-3d0d3b9c0e01" configVersion="19a902beea7bd842985775f0dbba34a800000000"/>
 		<Metadata name="CommonModule.МодульЗанятостиНомеров.Module" id="8005376e-e14b-425e-9765-3d0d3b9c0e01.0" configVersion="15d2c18e0d2c7943baabf9d69dbb888c00000000"/>
-		<Metadata name="Configuration.Конфигурация" id="79b3efa1-031a-4a15-aa1a-567f9c8d1738" configVersion="dba32095a420454e9c689b280864cd4400000000"/>
+		<Metadata name="Configuration.Конфигурация" id="79b3efa1-031a-4a15-aa1a-567f9c8d1738" configVersion="f6f5842a4675f84fae21d7a13bd61f7b00000000"/>
 		<Metadata name="Document.Бронирование" id="9e9797de-2361-49d9-b260-e60cccd04222" configVersion="6e92d93b4562174ba3848f0fab20aa9500000000">
 			<Metadata name="Document.Бронирование.Attribute.Постоялец" id="883dcecc-d4e8-4186-ac57-3b3c8ff1a187"/>
 			<Metadata name="Document.Бронирование.Attribute.НомерГостиницы" id="abf2d63d-ed36-4cd2-9f65-44963cf6ecbe"/>
@@ -56,14 +55,14 @@
 		<Metadata name="Document.Поселение.Form.ФормаДокумента" id="48b48044-6ed4-401a-8bc9-aeccee09d0ed" configVersion="5de46b578cd3bd4d824a01662ed3c5f400000000"/>
 		<Metadata name="Document.Поселение.Form.ФормаДокумента.Form" id="48b48044-6ed4-401a-8bc9-aeccee09d0ed.0" configVersion="e0e8ddef35cb0d4ea747c7ce8ec472d400000000"/>
 		<Metadata name="Document.Поселение.ObjectModule" id="4d3f947b-ee8c-49b8-8674-bbaa3966daa5.0" configVersion="912f0555ce0f774ba1c99949fc2f7f6e00000000"/>
-		<Metadata name="Document.ПоступлениеОплатыЗаПоселение" id="b55eba5a-2634-47bf-802d-c74e88a4b7ab" configVersion="a3e33280444c3b48b97aa4b868ff29be00000000">
+		<Metadata name="Document.ПоступлениеОплатыЗаПоселение" id="b55eba5a-2634-47bf-802d-c74e88a4b7ab" configVersion="7c485da98d239549b21062f8a9c74ba600000000">
 			<Metadata name="Document.ПоступлениеОплатыЗаПоселение.Attribute.Сумма" id="7c49ccee-2b2b-45f0-ba46-b1af35affe5e"/>
 			<Metadata name="Document.ПоступлениеОплатыЗаПоселение.Attribute.ОплатаПоЧастям" id="dbb5bc52-b4ea-4598-9697-70a602fa05c7"/>
 			<Metadata name="Document.ПоступлениеОплатыЗаПоселение.Attribute.Поселение" id="e4bb69d3-b455-4c63-8360-361eb7e62072"/>
 		</Metadata>
 		<Metadata name="Document.ПоступлениеОплатыЗаПоселение.Form.ФормаДокумента" id="a9ae37b8-d201-4a8d-80f7-f06e6a76c542" configVersion="55f4015eebbbcb4eae1341b2cb15531c00000000"/>
 		<Metadata name="Document.ПоступлениеОплатыЗаПоселение.Form.ФормаДокумента.Form" id="a9ae37b8-d201-4a8d-80f7-f06e6a76c542.0" configVersion="e0d8f35b231f7344b36a5e11a18248b300000000"/>
-		<Metadata name="Document.ПоступлениеОплатыЗаПоселение.ObjectModule" id="b55eba5a-2634-47bf-802d-c74e88a4b7ab.0" configVersion="ea23fb4b629b124692e30b3a6cd31dff00000000"/>
+		<Metadata name="Document.ПоступлениеОплатыЗаПоселение.ObjectModule" id="b55eba5a-2634-47bf-802d-c74e88a4b7ab.0" configVersion="3b9b46575122284d8d85f148ea4a453a00000000"/>
 		<Metadata name="Document.УстановкаЦенНаНомера" id="92e4f2d5-6fe4-4b24-894c-2791ca173760" configVersion="dcc926fd6a5a6c4399a09444e6bc311200000000">
 			<Metadata name="Document.УстановкаЦенНаНомера.TabularSection.Номера.Attribute.ВидНомера" id="04950e0f-f420-4d3a-be4b-556e7963a28a"/>
 			<Metadata name="Document.УстановкаЦенНаНомера.TabularSection.Номера" id="59482457-ea96-4a3f-9399-c90b6ea19650"/>
@@ -91,7 +90,7 @@
 		<Metadata name="Report.СвободныеНомера" id="c2a346a6-7834-4242-836f-11316683013f" configVersion="54a0e493a8755e4188f72518dfea788c00000000"/>
 		<Metadata name="Report.СвободныеНомера.Template.ОсновнаяСхемаКомпоновкиДанных" id="3cd483b8-946b-437c-bc3d-286a1bd70156" configVersion="e968a85f7af5d54fbf6d319c09f2ee7700000000"/>
 		<Metadata name="Report.СвободныеНомера.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="3cd483b8-946b-437c-bc3d-286a1bd70156.0" configVersion="f740210ca6992b49b7a096dfce73815c00000000"/>
-		<Metadata name="Subsystem.Гостиница" id="171c853b-9fdf-4f65-bfd9-07a89c132ad9" configVersion="761fe39b36406d4987dd97fdc1238e9700000000"/>
+		<Metadata name="Subsystem.Гостиница" id="171c853b-9fdf-4f65-bfd9-07a89c132ad9" configVersion="a12525cb1265e44c86a3cdcaadc1994100000000"/>
 		<Metadata name="Subsystem.НСИ" id="e1afea12-ff57-40fd-a8b8-7e0d8bb426ed" configVersion="50dfed8d187bfd4a856bf7890d70740c00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

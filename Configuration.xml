@@ -241,7 +241,7 @@
 			<InformationRegister>СвойстваНомера</InformationRegister>
 			<InformationRegister>ЦеныНаНомера</InformationRegister>
 			<AccumulationRegister>ПрожитыеДниПостояльца</AccumulationRegister>
-			<AccumulationRegister>ОплатаЗаездовПостояльца</AccumulationRegister>
+			<AccumulationRegister>ОплатаЗаездов</AccumulationRegister>
 			<ChartOfCharacteristicTypes>УниверсальныйПВХ</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>

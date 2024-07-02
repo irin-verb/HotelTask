@@ -20,11 +20,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.Поселение</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ПрожитыеДниПостояльца</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеОплатыЗаПоселение</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОплатаЗаездовПостояльца</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОплатаЗаездов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.СвободныеНомера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ЗабронированныеНомера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ЗаселенныеНомера</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">d06e7759-12d0-40d7-a316-538128e03167</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">5fc9d195-7c90-42e4-a32c-62e3c24bdb7a</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
