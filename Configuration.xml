@@ -226,6 +226,7 @@
 			<Language>Русский</Language>
 			<Subsystem>Гостиница</Subsystem>
 			<Subsystem>НСИ</Subsystem>
+			<CommonModule>МенеджерЗанятостиНомеров</CommonModule>
 			<Catalog>ВидыНомера</Catalog>
 			<Catalog>НомераГостиницы</Catalog>
 			<Catalog>ВидыИзОкна</Catalog>
@@ -234,6 +235,9 @@
 			<Document>Бронирование</Document>
 			<Document>Поселение</Document>
 			<Document>ПоступлениеОплатыЗаПоселение</Document>
+			<Report>СвободныеНомера</Report>
+			<Report>ЗабронированныеНомера</Report>
+			<Report>ЗаселенныеНомера</Report>
 			<InformationRegister>СвойстваНомера</InformationRegister>
 			<InformationRegister>ЦеныНаНомера</InformationRegister>
 			<AccumulationRegister>ПрожитыеДниПостояльца</AccumulationRegister>

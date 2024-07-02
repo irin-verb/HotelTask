@@ -21,6 +21,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ПрожитыеДниПостояльца</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеОплатыЗаПоселение</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОплатаЗаездовПостояльца</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СвободныеНомера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ЗабронированныеНомера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ЗаселенныеНомера</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
