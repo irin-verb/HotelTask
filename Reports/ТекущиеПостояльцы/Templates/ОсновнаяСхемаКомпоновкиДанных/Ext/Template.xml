@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поселение</dataPath>
+			<field>Поселение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаСкидки</dataPath>
+			<field>СуммаСкидки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Постоялец</dataPath>
+			<field>Постоялец</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НачалоПериода</dataPath>
+			<field>НачалоПериода</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата заселения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерГостиницы</dataPath>
+			<field>НомерГостиницы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид номера / номер</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаОплаты</dataPath>
+			<field>СуммаОплаты</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость проживания (без скидки)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаКУплате</dataPath>
+			<field>СуммаКУплате</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость проживания (со скидкой)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоДней</dataPath>
+			<field>КоличествоДней</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество суток проживания</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВнесеннаяСумма</dataPath>
+			<field>ВнесеннаяСумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма внесенной оплаты</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Недоплата</dataPath>
+			<field>Недоплата</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Недоплата</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерГостиницыВидНомера</dataPath>
+			<field>НомерГостиницыВидНомера</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Поселение.Ссылка КАК Ссылка,
+	0 КАК Сумма
+ПОМЕСТИТЬ ОплатаПоселений
+ИЗ
+	Документ.Поселение КАК Поселение
+ГДЕ
+	НЕ Поселение.Ссылка В
+				(ВЫБРАТЬ
+					ОплатаЗаездовОстатки.Поселение
+				ИЗ
+					РегистрНакопления.ОплатаЗаездов.Остатки КАК ОплатаЗаездовОстатки)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Поселения.Ссылка,
+	ОплатаЗаездовОстатки.СуммаОстаток
+ИЗ
+	РегистрНакопления.ОплатаЗаездов.Остатки КАК ОплатаЗаездовОстатки
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.Поселение КАК Поселения
+		ПО ОплатаЗаездовОстатки.Поселение = Поселения.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Поселение.Ссылка КАК Ссылка,
+	Поселение.ВерсияДанных КАК ВерсияДанных,
+	Поселение.ПометкаУдаления КАК ПометкаУдаления,
+	Поселение.Номер КАК Номер,
+	Поселение.Дата КАК Дата,
+	Поселение.Проведен КАК Проведен,
+	Поселение.Постоялец КАК Постоялец,
+	Поселение.НачалоПериода КАК НачалоПериода,
+	Поселение.КонецПериода КАК КонецПериода,
+	Поселение.НомерГостиницы КАК НомерГостиницы,
+	Поселение.СуммаОплаты КАК СуммаОплаты,
+	Поселение.ПроцентУвеличения КАК ПроцентУвеличения,
+	Поселение.ПроцентСкидки КАК ПроцентСкидки,
+	Поселение.СуммаСкидки КАК СуммаСкидки,
+	Поселение.СуммаКУплате КАК СуммаКУплате,
+	Поселение.Бронирование КАК Бронирование,
+	Поселение.Представление КАК Представление,
+	Поселение.МоментВремени КАК МоментВремени
+ПОМЕСТИТЬ АктуальныеПоселения
+ИЗ
+	Документ.Поселение КАК Поселение
+ГДЕ
+	Поселение.НачалоПериода &lt;= &amp;ТекущийДень
+	И Поселение.КонецПериода &gt;= &amp;ТекущийДень
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	АктуальныеПоселения.Ссылка КАК Ссылка,
+	АктуальныеПоселения.НомерГостиницы КАК НомерГостиницы,
+	АктуальныеПоселения.Постоялец КАК Постоялец,
+	АктуальныеПоселения.НачалоПериода КАК НачалоПериода,
+	РАЗНОСТЬДАТ(АктуальныеПоселения.НачалоПериода, АктуальныеПоселения.КонецПериода, ДЕНЬ) КАК КоличествоДней,
+	АктуальныеПоселения.СуммаОплаты КАК СуммаОплаты,
+	АктуальныеПоселения.СуммаСкидки КАК СуммаСкидки,
+	АктуальныеПоселения.СуммаКУплате КАК СуммаКУплате,
+	ОплатаПоселений.Сумма КАК ВнесеннаяСумма,
+	АктуальныеПоселения.СуммаКУплате - ОплатаПоселений.Сумма КАК Недоплата,
+	АктуальныеПоселения.НомерГостиницы.ВидНомера КАК НомерГостиницыВидНомера
+ИЗ
+	АктуальныеПоселения КАК АктуальныеПоселения
+		ЛЕВОЕ СОЕДИНЕНИЕ ОплатаПоселений КАК ОплатаПоселений
+		ПО АктуальныеПоселения.Ссылка = ОплатаПоселений.Ссылка</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ВнесеннаяСумма</dataPath>
+		<expression>Сумма(ВнесеннаяСумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаКУплате</dataPath>
+		<expression>Сумма(СуммаКУплате)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаОплаты</dataPath>
+		<expression>Сумма(СуммаОплаты)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаСкидки</dataPath>
+		<expression>Сумма(СуммаСкидки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Недоплата</dataPath>
+		<expression>Сумма(Недоплата)</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ТекущийДень</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущий день</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерГостиницы</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Постоялец</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НачалоПериода</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоДней</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаОплаты</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаСкидки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаКУплате</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВнесеннаяСумма</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Недоплата</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ТекущийДень</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>eabac711-9b78-468e-9e47-6fa6487868db</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>НомерГостиницы.ВидНомера</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

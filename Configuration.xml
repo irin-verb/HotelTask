@@ -238,6 +238,8 @@
 			<Report>СвободныеНомера</Report>
 			<Report>ЗабронированныеНомера</Report>
 			<Report>ЗаселенныеНомера</Report>
+			<Report>ТекущиеПостояльцы</Report>
+			<Report>Должники</Report>
 			<InformationRegister>СвойстваНомера</InformationRegister>
 			<InformationRegister>ЦеныНаНомера</InformationRegister>
 			<AccumulationRegister>ПрожитыеДниПостояльца</AccumulationRegister>

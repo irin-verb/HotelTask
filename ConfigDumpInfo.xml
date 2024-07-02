@@ -20,8 +20,8 @@
 			<Metadata name="Catalog.ДанныеПостояльцев.Attribute.Фамилия" id="9b4d15a0-c2dd-4d27-a003-e55caaf5cf9f"/>
 			<Metadata name="Catalog.ДанныеПостояльцев.Attribute.ПаспортныеДанные" id="a7e4e3ec-405d-4fb0-8137-f20500e42eb8"/>
 		</Metadata>
-		<Metadata name="Catalog.ДанныеПостояльцев.Form.ФормаЭлемента" id="7ee015f6-8c47-4ab6-856e-ed669f87ba5a" configVersion="a6e3a1bef34320419b881554d48b75a900000000"/>
-		<Metadata name="Catalog.ДанныеПостояльцев.Form.ФормаЭлемента.Form" id="7ee015f6-8c47-4ab6-856e-ed669f87ba5a.0" configVersion="8dda8965e094c84aa2738845759dc2ed00000000"/>
+		<Metadata name="Catalog.ДанныеПостояльцев.Form.ФормаЭлемента" id="7ee015f6-8c47-4ab6-856e-ed669f87ba5a" configVersion="417f68f103628144b0b75aa5bfc76c1700000000"/>
+		<Metadata name="Catalog.ДанныеПостояльцев.Form.ФормаЭлемента.Form" id="7ee015f6-8c47-4ab6-856e-ed669f87ba5a.0" configVersion="8ba77c55b63e8d4eaa82f6e0fa2214de00000000"/>
 		<Metadata name="Catalog.НомераГостиницы" id="2cae9e2f-a1f7-4538-84b9-66a230703a7a" configVersion="7b05515cb4c71648af15401cc7cda0e900000000">
 			<Metadata name="Catalog.НомераГостиницы.Attribute.НаличиеТелефона" id="110a84b6-91be-47cd-a6d9-9362205e21d3"/>
 			<Metadata name="Catalog.НомераГостиницы.Attribute.ВидНомера" id="4b0ec8e1-8bbd-496e-922a-5ac9e20904c5"/>
@@ -32,7 +32,7 @@
 		<Metadata name="ChartOfCharacteristicTypes.УниверсальныйПВХ" id="ca98bd69-132e-478f-8396-f951c381b464" configVersion="d626301f77dc4440bf30da8ce260b69f00000000"/>
 		<Metadata name="CommonModule.МодульЗанятостиНомеров" id="8005376e-e14b-425e-9765-3d0d3b9c0e01" configVersion="19a902beea7bd842985775f0dbba34a800000000"/>
 		<Metadata name="CommonModule.МодульЗанятостиНомеров.Module" id="8005376e-e14b-425e-9765-3d0d3b9c0e01.0" configVersion="15d2c18e0d2c7943baabf9d69dbb888c00000000"/>
-		<Metadata name="Configuration.Конфигурация" id="79b3efa1-031a-4a15-aa1a-567f9c8d1738" configVersion="f6f5842a4675f84fae21d7a13bd61f7b00000000"/>
+		<Metadata name="Configuration.Конфигурация" id="79b3efa1-031a-4a15-aa1a-567f9c8d1738" configVersion="399fecbb64784c40ba55e0ac6afed8a800000000"/>
 		<Metadata name="Document.Бронирование" id="9e9797de-2361-49d9-b260-e60cccd04222" configVersion="6e92d93b4562174ba3848f0fab20aa9500000000">
 			<Metadata name="Document.Бронирование.Attribute.Постоялец" id="883dcecc-d4e8-4186-ac57-3b3c8ff1a187"/>
 			<Metadata name="Document.Бронирование.Attribute.НомерГостиницы" id="abf2d63d-ed36-4cd2-9f65-44963cf6ecbe"/>
@@ -81,6 +81,9 @@
 			<Metadata name="InformationRegister.ЦеныНаНомера.Dimension.ВидНомера" id="93fd3ab8-91aa-443c-a80e-f06f2785894a"/>
 		</Metadata>
 		<Metadata name="Language.Русский" id="6442f221-2f67-4f14-a4e2-bf18a7f30eb8" configVersion="df16c55e4f31a343874de30957a0c85d00000000"/>
+		<Metadata name="Report.Должники" id="bf79b29c-a3b9-4841-88f9-ef82a2f21258" configVersion="1531b69dd7517d4481860b85fa80bf6600000000"/>
+		<Metadata name="Report.Должники.Template.ОсновнаяСхемаКомпоновкиДанных" id="a4872ab4-53ff-4f20-a55b-b20cd0cb8007" configVersion="8290aa88a15d244aa0f46d9a17b48dab00000000"/>
+		<Metadata name="Report.Должники.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="a4872ab4-53ff-4f20-a55b-b20cd0cb8007.0" configVersion="ce02637549f4f740ab465404a439ef4c00000000"/>
 		<Metadata name="Report.ЗабронированныеНомера" id="6d77465c-7c4d-49d4-8ea1-9ff0be6db0a2" configVersion="71833ae2fb3a0a458121edf0d08aa4c100000000"/>
 		<Metadata name="Report.ЗабронированныеНомера.Template.ОсновнаяСхемаКомпоновкиДанных" id="653f05c2-77ee-41c3-af40-fba3f9b9672e" configVersion="79daf5b11f918140b0f27742c2fd047c00000000"/>
 		<Metadata name="Report.ЗабронированныеНомера.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="653f05c2-77ee-41c3-af40-fba3f9b9672e.0" configVersion="b6ab025e5c46864f8dc1cefa9fd3775e00000000"/>
@@ -90,7 +93,10 @@
 		<Metadata name="Report.СвободныеНомера" id="c2a346a6-7834-4242-836f-11316683013f" configVersion="54a0e493a8755e4188f72518dfea788c00000000"/>
 		<Metadata name="Report.СвободныеНомера.Template.ОсновнаяСхемаКомпоновкиДанных" id="3cd483b8-946b-437c-bc3d-286a1bd70156" configVersion="e968a85f7af5d54fbf6d319c09f2ee7700000000"/>
 		<Metadata name="Report.СвободныеНомера.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="3cd483b8-946b-437c-bc3d-286a1bd70156.0" configVersion="f740210ca6992b49b7a096dfce73815c00000000"/>
-		<Metadata name="Subsystem.Гостиница" id="171c853b-9fdf-4f65-bfd9-07a89c132ad9" configVersion="a12525cb1265e44c86a3cdcaadc1994100000000"/>
+		<Metadata name="Report.ТекущиеПостояльцы" id="1c0aa115-4201-4143-acc4-32cdbf0e1b4e" configVersion="1931610eb3dbf947a032eaacb0ef576600000000"/>
+		<Metadata name="Report.ТекущиеПостояльцы.Template.ОсновнаяСхемаКомпоновкиДанных" id="011fb6b2-4d9a-48f1-9059-404141980084" configVersion="19431bb53ff3d340bdf13b107a57b17300000000"/>
+		<Metadata name="Report.ТекущиеПостояльцы.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="011fb6b2-4d9a-48f1-9059-404141980084.0" configVersion="9f83c29fa8b0854ebfcf1e7a06add0d700000000"/>
+		<Metadata name="Subsystem.Гостиница" id="171c853b-9fdf-4f65-bfd9-07a89c132ad9" configVersion="c1ffb2ed279beb45ba0ef58e477f81f400000000"/>
 		<Metadata name="Subsystem.НСИ" id="e1afea12-ff57-40fd-a8b8-7e0d8bb426ed" configVersion="50dfed8d187bfd4a856bf7890d70740c00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
