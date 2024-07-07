@@ -24,6 +24,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.УниверсальныйПВХ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.УстановкаЦенНаНомера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЦеныНаНомера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">4b88bb2d-0c4c-436e-a5a6-2d45bb6316a9</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

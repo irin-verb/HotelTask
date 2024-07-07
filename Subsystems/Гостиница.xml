@@ -26,6 +26,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ЗаселенныеНомера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ТекущиеПостояльцы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.Должники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СостояниеНомеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">338dd46a-ea1b-4189-8176-5bcb695b1fd3</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">1d4928be-f6a9-4afe-90e5-f9f511e9ce0b</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">d6a09c27-c88b-4afa-a532-3328a21d1c98</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
